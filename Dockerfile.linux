@@ -9,7 +9,7 @@ WORKDIR /source/dotnetcore-docs-hello-world
 RUN dotnet publish -c release -o /app 
 
 # final stage/image
-FROM mcr.microsoft.com/dotnet/aspnet:7.0
+FROM mcr.microsoft.com/dotnet/framework/aspnet:4.8.1
 WORKDIR /app
 COPY --from=build /app ./
 
