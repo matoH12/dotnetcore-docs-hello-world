@@ -1,5 +1,5 @@
 # Start with the .NET SDK for building the app
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 # Work within a folder named `/source`
 WORKDIR /source
 
